@@ -1,5 +1,5 @@
 {
-  description = "OSINT tools packaged for Nix — NUR repo";
+  description = "NUR Repo - OSINT & Cybersecurity tools";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
