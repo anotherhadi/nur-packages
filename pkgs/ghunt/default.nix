@@ -31,7 +31,7 @@ buildPythonApplication (finalAttrs: {
     owner = "mxrch";
     repo = "ghunt";
     rev = "5ee893929c51c7a8a665b199bbae04ce85a662b4";
-    hash = "sha256-Zd0kpyr+Hkbh5MH3q3lrkH3liXw95sKRX+SZhsUVUhI=";
+    hash = "sha256-pBH8Uhh+Yg9rrX8duEPLf/+JF5PR4I5zUhQ4EMiyk7A=";
   };
 
   pythonRelaxDeps = true;
@@ -41,25 +41,27 @@ buildPythonApplication (finalAttrs: {
     pythonRelaxDepsHook
   ];
 
-  propagatedBuildInputs = [
-    alive-progress
-    autoslot
-    beautifulsoup4
-    beautifultable
-    dnspython
-    geopy
-    httpx
-    humanize
-    imagehash
-    inflection
-    jsonpickle
-    pillow
-    protobuf
-    python-dateutil
-    rich
-    rich-argparse
-    packaging
-  ] ++ httpx.optional-dependencies.http2;
+  propagatedBuildInputs =
+    [
+      alive-progress
+      autoslot
+      beautifulsoup4
+      beautifultable
+      dnspython
+      geopy
+      httpx
+      humanize
+      imagehash
+      inflection
+      jsonpickle
+      pillow
+      protobuf
+      python-dateutil
+      rich
+      rich-argparse
+      packaging
+    ]
+    ++ httpx.optional-dependencies.http2;
 
   doCheck = false;
 
