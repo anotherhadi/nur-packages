@@ -32,7 +32,7 @@ Add this repo as an input in your `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nur-anotherhadi.url = "github:anotherhadi/nur";
+    nur-anotherhadi.url = "github:anotherhadi/nur-packages";
   };
 
   outputs = { nixpkgs, nur-anotherhadi, ... }: {
@@ -47,7 +47,7 @@ Add this repo as an input in your `flake.nix`:
 Or just run a tool without adding it to your config:
 
 ```bash
-nix run github:anotherhadi/nur#toutatis -- --help
+nix run github:anotherhadi/nur-packages#toutatis -- --help
 ```
 
 ### With NUR (non-flake)
