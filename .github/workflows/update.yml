@@ -24,7 +24,7 @@ jobs:
       - name: Update packages
         run: |
           python_pkgs=(toutatis ignorant ghunt user-scanner)
-          go_pkgs=(github-recon gravatar-recon spilltea usbguard-tui jwt-tui)
+          go_pkgs=(github-recon gravatar-recon spilltea usbguard-tui jwt-tui sheets)
 
           for pkg in "${python_pkgs[@]}"; do
             echo "==> $pkg"
