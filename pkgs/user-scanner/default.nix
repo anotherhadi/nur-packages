@@ -10,14 +10,14 @@
 }:
 buildPythonApplication rec {
   pname = "user-scanner";
-  version = "1.4.0";
+  version = "1.4.1";
   pyproject = true;
 
   src = fetchFromGitHub {
     owner = "kaifcodec";
     repo = "user-scanner";
     rev = "refs/tags/v${version}";
-    hash = "sha256-sJ7GTyB42cTNOHCponKL3aFOyMAlLDSw+gH3UibzgjE=";
+    hash = "sha256-SDi13KGqWXgNXdgF5KOpqEcjwbuNv4PU5ahB5UdsbWQ=";
   };
 
   build-system = [flit-core];
