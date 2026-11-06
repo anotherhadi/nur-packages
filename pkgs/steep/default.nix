@@ -14,7 +14,7 @@ buildGoModule (finalAttrs: {
     owner = "sectui";
     repo = "steep";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-9rbKmJSVk592D0TcUYR97Yi3bxc1NamaRepmnUBY7b8=";
+    hash = "sha256-/ii1BKond8ue+4Acakl8HqipUDC4NpHx9YmKhklM4po=";
   };
 
   vendorHash = "sha256-ngD9hf4zS+QKPxb/aI+bVgmM06b2N2wc/0drPvP9HfA=";
