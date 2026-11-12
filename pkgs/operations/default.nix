@@ -11,7 +11,7 @@ buildGoModule (finalAttrs: {
   version = "0.0.1";
 
   src = fetchFromGitHub {
-    owner = "sectui";
+    owner = "anotherhadi";
     repo = "operations";
     tag = "v${finalAttrs.version}";
     hash = "sha256-9e05N1gVmGacz+/sannIuDRZ2BluZQjwoZRofiHBgWI=";
@@ -43,8 +43,8 @@ buildGoModule (finalAttrs: {
 
   meta = {
     description = "CyberChef-like data transformations from the terminal";
-    homepage = "https://github.com/sectui/operations";
-    changelog = "https://github.com/sectui/operations/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/anotherhadi/operations";
+    changelog = "https://github.com/anotherhadi/operations/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
     maintainers = [

@@ -5,7 +5,7 @@ on:
     - cron: "17 */6 * * *"
   workflow_dispatch:
   # A release can also ask for an update right away:
-  # gh api repos/sectui/nur/dispatches -f event_type=release
+  # gh api repos/anotherhadi/nur/dispatches -f event_type=release
   repository_dispatch:
     types: [release]
 
@@ -55,4 +55,4 @@ jobs:
       # A push with GITHUB_TOKEN starts no other workflow: tell NUR here.
       - name: Trigger NUR update
         if: steps.push.outputs.pushed == 'true'
-        run: curl -XPOST "https://nur-update.nix-community.org/update?repo=sectui"
+        run: curl -XPOST "https://nur-update.nix-community.org/update?repo=anotherhadi"

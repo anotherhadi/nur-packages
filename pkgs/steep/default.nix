@@ -11,7 +11,7 @@ buildGoModule (finalAttrs: {
   version = "0.0.4";
 
   src = fetchFromGitHub {
-    owner = "sectui";
+    owner = "anotherhadi";
     repo = "steep";
     tag = "v${finalAttrs.version}";
     hash = "sha256-mwoXurOv1iQ8lpRvjTUDcrWaHODIHORTMC38pdrp/IQ=";
@@ -24,7 +24,7 @@ buildGoModule (finalAttrs: {
   ldflags = [
     "-s"
     "-w"
-    "-X github.com/sectui/steep/internal/config.Version=${finalAttrs.version}"
+    "-X github.com/anotherhadi/steep/internal/config.Version=${finalAttrs.version}"
   ];
 
   nativeBuildInputs = [makeWrapper];
@@ -41,8 +41,8 @@ buildGoModule (finalAttrs: {
 
   meta = {
     description = "TUI to edit, replay and fuzz raw HTTP requests, powered by ffuf";
-    homepage = "https://github.com/sectui/steep";
-    changelog = "https://github.com/sectui/steep/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/anotherhadi/steep";
+    changelog = "https://github.com/anotherhadi/steep/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
     maintainers = [

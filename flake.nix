@@ -1,5 +1,5 @@
 {
-  description = "NUR repository of the sectui security tools";
+  description = "NUR repository of the foam security tools";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 

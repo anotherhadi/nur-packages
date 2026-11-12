@@ -9,7 +9,7 @@ buildGoModule (finalAttrs: {
   version = "0.0.1";
 
   src = fetchFromGitHub {
-    owner = "sectui";
+    owner = "anotherhadi";
     repo = "spilltea";
     tag = "v${finalAttrs.version}";
     hash = "sha256-Q9bXnTSq2B9YJhkHN2jpxmE2xBAmt+AwU+EuKqAiQe4=";
@@ -22,7 +22,7 @@ buildGoModule (finalAttrs: {
   ldflags = [
     "-s"
     "-w"
-    "-X github.com/sectui/spilltea/internal/config.Version=${finalAttrs.version}"
+    "-X github.com/anotherhadi/spilltea/internal/config.Version=${finalAttrs.version}"
   ];
 
   nativeInstallCheckInputs = [versionCheckHook];
@@ -32,8 +32,8 @@ buildGoModule (finalAttrs: {
 
   meta = {
     description = "TUI intercepting proxy for pentesters and bug bounty hunters, a lightweight terminal-first alternative to Burp Suite and Caido";
-    homepage = "https://github.com/sectui/spilltea";
-    changelog = "https://github.com/sectui/spilltea/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/anotherhadi/spilltea";
+    changelog = "https://github.com/anotherhadi/spilltea/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
     maintainers = [
